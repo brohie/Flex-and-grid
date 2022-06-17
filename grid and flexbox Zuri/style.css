@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    background: hsl(0, 0%, 95%);
+}
+.con{
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3em;
+    background: hsl(0, 0%, 95%);
+    padding: 1em;
+    width: 100%;
+}
+ nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+ nav li{
+    margin: 0 10em;
+    font-size: 20px;
+    font-weight: 700;
+}
+nav a{
+    text-decoration: none;
+    color: #e28525;
+}
+nav a:hover, nav a:focus{
+      color: #00403f;
+}
+.active{
+    border-bottom: 2px solid #707070;
+}
+
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    color: #ddd;
+    width: 60%;
+    margin: auto;
+    padding: 3em;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cars{
+    width: 40%;
+    padding: 3em;
+    
+}
+.cars1{
+    background: hsl(31, 77%, 52%);
+    border-radius: 1em 0 0 1em;
+}
+.cars2{
+    background:hsl(184, 100%, 22%);
+}
+.cars3{
+    background: hsl(179, 100%, 13%);
+    border-radius:0 1em 1em 0;
+}
+h2{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 27px;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.btn{
+    margin-top: 2.5em;
+    outline: none;
+    border: none;
+    width: 120px;
+    padding: 1em;
+    background: hsl(0, 0%, 95%);
+    border-radius: 2em;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn:hover{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+.btn1{
+    color: #e28525;
+}
+.btn2{
+    color: #016972;
+}
+.btn3{
+    color: #00403f;
+}
+@media (max-width:375px) {
+    .container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.container2{
+    display: grid;
+    grid-template-areas: 
+    'a a a a b b'
+    'a a a a b b'
+    'c c c d d d'
+    'c c c e e e'
+    ;
+    grid-gap: 1em;
+    width: 50%;
+    margin: auto;
+    grid-template-rows: 100px 1fr;
+}
+
+.container2 > div{
+    padding: 2em;
+}
+.box1{
+    background: #eb5020;
+    grid-area: a;
+    }
+
+.box2{
+    background: #ffa401;
+    grid-area: b;
+}
+.box3{
+    background: #05aa42;
+    grid-area: c;
+} 
+.box4{
+    grid-area: d;
+}
+.box5{
+    grid-area: e;
+}
+.box4, .box5{ 
+    background: #01aefd;
+    
+    
+}
